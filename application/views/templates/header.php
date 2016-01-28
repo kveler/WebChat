@@ -8,6 +8,7 @@
     <!--css-->
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+    <link href='application/assets/css/style.css' rel='stylesheet' type='text/css'>
     <style>
         /*#DD1144;*/
 
