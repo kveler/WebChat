@@ -6,9 +6,13 @@
 class IndexController extends EmmaController
 {
 
+    public $user;
+
     public function index ()
     {
-    	
+
+        $this->user = Session::get ("user");
+
 	   	$this->page ();
 
     }

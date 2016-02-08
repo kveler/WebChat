@@ -1,5 +1,3 @@
-window.onload = function () { setInterval (function () { receive () }, 1000); }
-
 function send(){
 
     var berichtValue = $("#bericht").val ();
@@ -9,11 +7,21 @@ function send(){
 
 }
 
+
 function receive(){
 
-    console.log ("Rito pls");
+
     $.post( "application/assets/scripts/PHP/showchat.php", function( data ) {
         $("#chat").html (data);
     });
+
+}
+
+function login(){
+
+    var user = $("#user").val ();
+    var email = $("#email").val ();
+
+    $.post( "/?c=chatcontroller&m=userToDatabase", { user: user, email: email } );
 
 }
