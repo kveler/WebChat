@@ -4,6 +4,8 @@ class ChatController extends EmmaController {
 
     public function userToDatabase(){
 
+        die (var_dump ($_POST));
+
         $users = new UsersTable();
 
         $users->insert
@@ -15,7 +17,7 @@ class ChatController extends EmmaController {
             )
         );
 
-        session::set("user", $_POST['user']);
+        Session::set("user", $_POST['user']);
     }
 
 

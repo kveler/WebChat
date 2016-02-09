@@ -19,9 +19,14 @@ function receive(){
 
 function login(){
 
+    console.log ("LOGIN ACTION");
+
     var user = $("#user").val ();
     var email = $("#email").val ();
 
-    $.post( "/?c=chatcontroller&m=userToDatabase", { user: user, email: email } );
+    console.log (user);
+    console.log (email);
+
+    $.post( basepath + "?c=chat&m=userToDatabase", { user: user, email: email }, function (data) { console.log (data) } );
 
 }
