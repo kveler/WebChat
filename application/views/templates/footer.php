@@ -10,7 +10,7 @@
 
         <?php
 
-        if (isset($this->user) != true){
+        if (isset($this->user) == true){
             ?>
             <div id="chat">
                 <h2>Zou fijn zijn als je ook gewoon inlogt, weten wij iig wat je naam is</h2>
@@ -27,7 +27,7 @@
             <div id="chat">
     <script>
         console.log("dikkedoei");
-        //setInterval (function () { console.log("jadag") }, 1000);
+        setInterval (function () { receive ()}, 500);
     </script>
 
 
@@ -35,7 +35,7 @@
             <div id="message">
                 <!-- <textarea rows="3" placeholder="Type hier uw bericht..." style="height: 100%; width: 100%;"></textarea> -->
 
-                    <input type="text" id="bericht" name="bericht" style="width: 80%;"></input>
+                    <input type="text" id="bericht" name="bericht" style="width: 80%;" />
                     <button type="button" style="width: 18%;" onclick="send ()">Send</button>
 
             </div>
