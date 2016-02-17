@@ -15,7 +15,8 @@ class ChatController extends EmmaController {
             )
         );
 
-        Session::set("user", $_POST['user']);
+
+
     }
 
 

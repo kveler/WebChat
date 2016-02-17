@@ -1,3 +1,6 @@
+var userName;
+var email;
+
 function send(){
 
     var berichtValue = $("#bericht").val ();
@@ -19,13 +22,16 @@ function receive(){
 
 function login(){
 
-    console.log ("What do yo umean, tusduuodsufouds");
-
     var user = $("#user").val ();
     var email = $("#email").val ();
 
     $.post( "/webchat/?c=chat&m=userToDatabase", { user: user, email: email }) .done (function (data) {
         console.log (data);
     });
+
+    userName    = user;
+    email       = email;
+
+    setInterval (function () { receive ()}, 500);
 
 }

@@ -10,7 +10,7 @@
 
         <?php
 
-        if (isset($this->user) == true){
+        if (empty($this->user) == 1){
             ?>
             <div id="chat">
                 <h2>Zou fijn zijn als je ook gewoon inlogt, weten wij iig wat je naam is</h2>
