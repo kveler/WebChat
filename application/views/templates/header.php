@@ -5,6 +5,8 @@
 
     <meta name="viewport" content="width=device-width, user-scalable=yes">
 
+    <script>var basepath="<?=BASEPATH?>";</script> <!-- translating EmmaPHP's "BASEPATH" constant to JavaScript for future reference. -->
+
     <!--css-->
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>

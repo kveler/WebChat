@@ -6,27 +6,31 @@
         <span style="margin-left:10px;">Chat met een medewerker!</span>
         <span style="float:right; margin-right:8px;">X</span>
     </div>
-    <div id="chat">
+
 
         <?php
 
-        if (isset ($this->user)){
+        if (isset($this->user) != true){
             ?>
-
-        <h2>Zou fijn zijn als je ook gewoon inlogt, weten wij iig wat je naam is</h2>
+            <div id="chat">
+                <h2>Zou fijn zijn als je ook gewoon inlogt, weten wij iig wat je naam is</h2>
 
                 <input id="user" type="text" name="user" placeholder="Naam" required> <br/>
                 <input id="email" type="text" name="mail" placeholder="E-mail adres" required> <br/>
                 <button onclick="login()" name="submit">Start chat</button>
-    </div>
+            </div>
         <?php
 
         }
         else {
             ?>
+            <div id="chat">
     <script>
-        setInterval (function () { receive () }, 1000);
+        console.log("dikkedoei");
+        //setInterval (function () { console.log("jadag") }, 1000);
     </script>
+
+
             </div>
             <div id="message">
                 <!-- <textarea rows="3" placeholder="Type hier uw bericht..." style="height: 100%; width: 100%;"></textarea> -->

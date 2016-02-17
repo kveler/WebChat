@@ -9,7 +9,7 @@
 
 //echo $_POST["bericht"];
 
-$_SESSION['user'] = "dikke bmw";
+
 
 $file = 'chat.txt';
 // Open the file to get existing content

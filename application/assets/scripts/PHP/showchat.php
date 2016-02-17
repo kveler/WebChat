@@ -8,4 +8,6 @@ if (isset ($_SESSION['user'])) {
 // Open the file to get existing content
     $current = file_get_contents($file);
     echo $current;
+
+
 }
