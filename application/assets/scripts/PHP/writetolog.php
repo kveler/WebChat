@@ -15,6 +15,6 @@ $file = 'chat.txt';
 // Open the file to get existing content
 $current = file_get_contents($file);
 // Append a new message to the file
-$current .=  $_SESSION['user']. ": " . $_POST['bericht'] . "<br /> \r\n";
+$current .=  "<script> document.write(userName) </script>: " . $_POST['bericht'] . "<br /> \r\n";
 // Write the contents back to the file
 file_put_contents($file, $current);

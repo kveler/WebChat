@@ -1,4 +1,4 @@
-</div>
+4</div>
 <!--wrapper end-->
 
 <div id="chatwindow">
@@ -8,10 +8,8 @@
     </div>
 
 
-        <?php
 
-        if (empty($this->user) == 1){
-            ?>
+
             <div id="chat">
                 <h2>Zou fijn zijn als je ook gewoon inlogt, weten wij iig wat je naam is</h2>
 
@@ -19,29 +17,15 @@
                 <input id="email" type="text" name="mail" placeholder="E-mail adres" required> <br/>
                 <button onclick="login()" name="submit">Start chat</button>
             </div>
-        <?php
 
-        }
-        else {
-            ?>
-            <div id="chat">
-    <script>
-        console.log("dikkedoei");
-        setInterval (function () { receive ()}, 500);
-    </script>
-
-
-            </div>
-            <div id="message">
+            <div id="message" style="display:none;">
                 <!-- <textarea rows="3" placeholder="Type hier uw bericht..." style="height: 100%; width: 100%;"></textarea> -->
 
                     <input type="text" id="bericht" name="bericht" style="width: 80%;" />
                     <button type="button" style="width: 18%;" onclick="send ()">Send</button>
 
             </div>
-            <?php
-        }
-        ?>
+
 
 
 
