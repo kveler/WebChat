@@ -5,3 +5,5 @@
 : qweqweqwe<br /> 
 <script> document.write(user) </script>: adsfasdf<br /> 
 <script> document.write(userName) </script>: asdfsadfasdf<br /> 
+<script> document.write(userName) </script>: fjhhh<br /> 
+<script> document.write(userName) </script>: dsadsadas<br /> 

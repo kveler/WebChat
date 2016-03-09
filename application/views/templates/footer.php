@@ -1,4 +1,4 @@
-4</div>
+</div>
 <!--wrapper end-->
 
 <div id="chatwindow">
