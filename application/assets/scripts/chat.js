@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 var userName;
 var email;
 
 
+=======
+>>>>>>> parent of c2fb8ff... BUG!!!1111!!!!!!!111!!1!11
 function send(){
 
     var berichtValue = $("#bericht").val ();
@@ -25,6 +28,8 @@ function receive(){idunnooo
 
 function login(){
 
+    console.log ("What do yo umean, tusduuodsufouds");
+
     var user = $("#user").val ();
     var email = $("#email").val ();
 
@@ -34,6 +39,7 @@ function login(){
         console.log (data);
     });
 
+<<<<<<< HEAD
     userName    = user;
     email       = email;
 
@@ -43,4 +49,6 @@ function login(){
 
     setInterval (function () { receive ()}, 500);
 
+=======
+>>>>>>> parent of c2fb8ff... BUG!!!1111!!!!!!!111!!1!11
 }
