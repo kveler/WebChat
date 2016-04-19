@@ -9,8 +9,10 @@
 
 
         <?php
+        $nicename = Session::get ("user");
 
-        if (empty($this->user) == 1){
+die(var_dump($nicename));
+        if (Session::get ("user") == NULL){
             ?>
             <div id="chat">
                 <h2>Zou fijn zijn als je ook gewoon inlogt, weten wij iig wat je naam is</h2>
